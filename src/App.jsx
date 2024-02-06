@@ -1,9 +1,9 @@
 import { Box, Button, Center, Flex, Heading, Image, Input, SimpleGrid, Spinner, Text } from '@chakra-ui/react';
 import { Alchemy, Network, Utils } from 'alchemy-sdk';
 import { useState, useEffect } from 'react';
+ 
 
 
-// Load environment variables from .env file
 
 
 
@@ -16,7 +16,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [cachedTokenMetadata, setCachedTokenMetadata] = useState({});
-
+  
   useEffect(() => {
     // Fetch cached token metadata from local storage on component mount
     const cachedData = localStorage.getItem('cachedTokenMetadata');
@@ -45,9 +45,11 @@ function App() {
     try {
       let address = userAddress;
       console.log('Fetching token balances for address:', address);
+       
+      const { publicRuntimeConfig } = getConfig();
 
       const config = {
-        apiKey: process.env.API_KEY,
+        apiKey: "Your api key",
         network: Network.ETH_MAINNET,
       };
 
