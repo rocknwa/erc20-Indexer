@@ -7,7 +7,7 @@ This is an skeleton app that uses the Alchemy SDK rigged to Alchemy's Enhanced A
 1. Install dependencies by running `npm install`
 2. Start application by running `npm run dev`
 
-## Challenge
+## I did this  Challenge below
 
 Fork this repo and build out more features! This is minimalistic on purpose.
 
